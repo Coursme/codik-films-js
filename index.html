@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>КодикFilms</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://devalex.ru/project/codik/course/css/image/codik-logo.svg" alt="logo" class="logo" />
+            <img src="https://devalex.ru/project/codik/course/css/image/hamburger.svg" alt="menu-icon" class="menu-logo" />
+        </header>
+
+        <div class="films">
+            <div id="category" class="category"></div>
+
+            <div class="wrapper"></div>
+        </div>
+
+        <footer>
+            <img src="https://devalex.ru/project/codik/course/css/image/codik-logo.svg" alt="logo" class="logo" />
+
+            <ul class="list-documents">
+                <li>
+                    <a href="#">Правила пользования</a>
+                </li>
+                <li>
+                    <a href="#">Условия использования</a>
+                </li>
+                <li>
+                    <a href="#">Конфиденциальность</a>
+                </li>
+            </ul>
+
+            <div class="contact">
+                <h3>Контактная информация</h3>
+
+                <ul>
+                    <li>
+                        <a href="#">Телефон: +7 (123) 456-78-90</a>
+                    </li>
+                    <li>
+                        <a href="#">Email: info@example.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rights">
+                КодикFilms 2024. All rights reserved
+            </div>
+        </footer>
+
+        <div class="modal-trailer">
+            <div class="wrapper">
+                <div id="modal-trailer-close" onclick="onCloseModalTrailer()">Закрыть</div>
+                <iframe class="iframe-video" width="100%" height="300px" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="overlay" onclick="onCloseModalTrailer()"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
